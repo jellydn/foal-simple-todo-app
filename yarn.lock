@@ -2644,7 +2644,7 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==
 
-superagent@^8.0.0:
+superagent@^8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/superagent/-/superagent-8.0.3.tgz#15c8ec5611a1f01386994cfeeda5aa138bcb7b17"
   integrity sha512-oBC+aNsCjzzjmO5AOPBPFS+Z7HPzlx+DQr/aHwM08kI+R24gsDmAS1LMfza1fK+P+SKlTAoNZpOvooE/pRO1HA==
@@ -2660,13 +2660,13 @@ superagent@^8.0.0:
     qs "^6.11.0"
     semver "^7.3.8"
 
-supertest@~6.2.3:
-  version "6.2.4"
-  resolved "https://registry.yarnpkg.com/supertest/-/supertest-6.2.4.tgz#3dcebe42f7fd6f28dd7ac74c6cba881f7101b2f0"
-  integrity sha512-M8xVnCNv+q2T2WXVzxDECvL2695Uv2uUj2O0utxsld/HRyJvOU8W9f1gvsYxSNU4wmIe0/L/ItnpU4iKq0emDA==
+supertest@~6.3.0:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/supertest/-/supertest-6.3.1.tgz#a8ad362fc6f323c88730ac191ce30427dc869088"
+  integrity sha512-hRohNeIfk/cA48Cxpa/w48hktP6ZaRqXb0QV5rLvW0C7paRsBU3Q5zydzYrslOJtj/gd48qx540jKtcs6vG1fQ==
   dependencies:
     methods "^1.1.2"
-    superagent "^8.0.0"
+    superagent "^8.0.3"
 
 supervisor@~0.12.0:
   version "0.12.0"
