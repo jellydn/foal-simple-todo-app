@@ -37,7 +37,7 @@
     "@typescript-eslint/eslint-plugin": "~5.27.1",
     "@typescript-eslint/parser": "~5.27.1",
     "concurrently": "~7.5.0",
-    "eslint": "~8.17.0",
+    "eslint": "~8.26.0",
     "husky": "^8.0.0",
     "mocha": "~8.2.0",
     "nano-staged": "^0.8.0",
