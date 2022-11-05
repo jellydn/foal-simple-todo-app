@@ -8,7 +8,6 @@ import { AppController } from '../app/app.controller';
 import { createDataSource } from '../db';
 
 describe('The server', () => {
-
   let app;
   let dataSource: DataSource;
 
@@ -25,9 +24,6 @@ describe('The server', () => {
   });
 
   it('should return a 200 status on GET / requests.', () => {
-    return request(app)
-      .get('/')
-      .expect(200);
+    return request(app).get('/').expect(200);
   });
-
 });

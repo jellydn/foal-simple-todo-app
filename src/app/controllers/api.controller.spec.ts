@@ -1,34 +1,80 @@
 // std
-import { strictEqual } from 'assert';
+// The `assert` module provides a simple set of assertion tests.
+import { ok, strictEqual } from 'assert';
 
 // 3p
-import { Context, createController, getHttpMethod, getPath, isHttpResponseOK } from '@foal/core';
+import {
+  createController,
+  getHttpMethod,
+  getPath,
+  isHttpResponseOK,
+} from '@foal/core';
+import { DataSource } from 'typeorm';
 
 // App
+import { Todo } from '../entities';
 import { ApiController } from './api.controller';
+import { createDataSource } from '../../db';
 
+// Define a group of tests.
 describe('ApiController', () => {
+  let dataSource: DataSource;
+  let controller: ApiController;
 
-  describe('has a "index" method that', () => {
-
-    it('should handle requests at GET /.', () => {
-      strictEqual(getHttpMethod(ApiController, 'index'), 'GET');
-      strictEqual(getPath(ApiController, 'index'), '/');
-    });
-
-    it('should return a HttpResponseOK.', () => {
-      const controller = createController(ApiController);
-      const ctx = new Context({});
-
-      const response = controller.index(ctx);
-
-      if (!isHttpResponseOK(response)) {
-        throw new Error('The response should be an instance of HttpResponseOK.');
-      }
-
-      strictEqual(response.body, 'Hello world!');
-    });
-
+  // Create a connection to the database before running all the tests.
+  before(async () => {
+    // The connection uses the configuration defined in the file config/test.json.
+    // By default, the file has three connection options:
+    // - "database": "./test_db.sqlite3" -> Use a different database for running the tests.
+    // - "synchronize": true ->  Auto create the database schema when the connection is established.
+    // - "dropSchema": true -> Drop the schema when the connection is established (empty the database).
+    dataSource = createDataSource();
+    await dataSource.initialize();
   });
 
+  // Close the database connection after running all the tests whether they succeed or failed.
+  after(async () => {
+    if (dataSource) {
+      await dataSource.close();
+    }
+  });
+
+  // Create or re-create the controller before each test.
+  beforeEach(() => (controller = createController(ApiController)));
+
+  // Define a nested group of tests.
+  describe('has a "getTodos" method that', () => {
+    // Define a unit test.
+    it('should handle requests at GET /todos.', () => {
+      // Throw an error and make the test fail if the HTTP method of `getTodos` is not GET.
+      strictEqual(getHttpMethod(ApiController, 'getTodos'), 'GET');
+      // Throw an error and make the test fail if the path of `getTodos` is not /todos.
+      strictEqual(getPath(ApiController, 'getTodos'), '/todos');
+    });
+
+    // Define a unit test.
+    it('should return an HttpResponseOK.', async () => {
+      // Create fake todos.
+      const todo1 = new Todo();
+      todo1.text = 'Todo 1';
+
+      const todo2 = new Todo();
+      todo2.text = 'Todo 2';
+
+      // Save the todos.
+      await Todo.save([todo1, todo2]);
+
+      const response = await controller.getTodos();
+      ok(
+        isHttpResponseOK(response),
+        'response should be an instance of HttpResponseOK.'
+      );
+
+      const body = response.body;
+
+      ok(Array.isArray(body), 'The body of the response should be an array.');
+      strictEqual(body[0].text, 'Todo 1');
+      strictEqual(body[1].text, 'Todo 2');
+    });
+  });
 });

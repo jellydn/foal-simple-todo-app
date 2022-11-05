@@ -4,12 +4,8 @@ import { dataSource } from '../db';
 
 export const schema = {
   additionalProperties: false,
-  properties: {
-
-  },
-  required: [
-
-  ],
+  properties: {},
+  required: [],
   type: 'object',
 };
 
