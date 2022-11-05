@@ -1,4 +1,5 @@
 # Welcome to foal-todo-apps 👋
+
 ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
 ![Prerequisite](https://img.shields.io/badge/node-%3E%3D16.0.0-blue.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
@@ -28,18 +29,26 @@ yarn dev
 yarn test
 ```
 
+## Deployment
+
+## Useful Resources:
+
+- [Doc - Simple Todo App](https://foalts.org/docs/tutorials/simple-todo-list/1-installation)
+- [Doc - Real World App With React](https://foalts.org/docs/tutorials/real-world-example-with-react/1-introduction)
+
 ## Author
 
 👤 **Dung Huynh**
 
-* Website: https://productsway.com/
-* Twitter: [@jellydn](https://twitter.com/jellydn)
-* Github: [@jellydn](https://github.com/jellydn)
+- Website: https://productsway.com/
+- Twitter: [@jellydn](https://twitter.com/jellydn)
+- Github: [@jellydn](https://github.com/jellydn)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
+---
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_This README was generated with ❤️ by
+[readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
