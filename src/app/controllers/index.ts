@@ -1,1 +1,1 @@
-export { ApiController } from './api.controller';
+export {ApiController} from './api.controller';
