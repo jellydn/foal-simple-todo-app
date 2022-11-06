@@ -31,6 +31,8 @@ yarn test
 
 ## Deployment
 
+- TODO: setup the deployment with github action
+
 ## Useful Resources:
 
 - [Doc - Simple Todo App](https://foalts.org/docs/tutorials/simple-todo-list/1-installation)
