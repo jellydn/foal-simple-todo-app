@@ -248,10 +248,10 @@
   resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.5.tgz#3abc203c79b8c3e90fd6c156a0c62d5403520e12"
   integrity sha512-Uy0+khmZqUrUGm5dmMqVlnvufZRSK0FbYzVgp0UMstm+F5+W2/jnEEQyc9vo1ZR/E5ZI/B1WjjoTqBqwJL6Krw==
 
-"@trivago/prettier-plugin-sort-imports@4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-4.1.0.tgz#3911732e5f8174332102accde6ef75b8ad4c07c6"
-  integrity sha512-aTr6QPFaPAAzPRFn9yWB/9yKi3ZAFqfGpxIGLPWuQfYJFGUed+W3KKwxntsoCiNvNE2iuKOg6haMo5KG8WXltg==
+"@trivago/prettier-plugin-sort-imports@4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-4.1.1.tgz#71c3c1ae770c3738b6fc85710714844477574ffd"
+  integrity sha512-dQ2r2uzNr1x6pJsuh/8x0IRA3CBUB+pWEW3J/7N98axqt7SQSm+2fy0FLNXvXGg77xEDC7KHxJlHfLYyi7PDcw==
   dependencies:
     "@babel/generator" "7.17.7"
     "@babel/parser" "^7.20.5"
