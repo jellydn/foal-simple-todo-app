@@ -153,10 +153,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.37.0.tgz#cf1b5fa24217fe007f6487a26d765274925efa7d"
   integrity sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==
 
-"@foal/cli@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@foal/cli/-/cli-3.1.0.tgz#9e02add85d17a9c1b8f043d7e4adc92fdbb7b4c0"
-  integrity sha512-ZwLe/FsT7V8445eRoM5yCut8u+LlzPPhNmm68MpLQX9BaY/XUpsuCHAWAC0WmWlxH/Ns0XbnG/LG6hJIHp+MTA==
+"@foal/cli@3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@foal/cli/-/cli-3.2.0.tgz#68c6a306e84438b04ed2b8fd6dd572ca6df0fc85"
+  integrity sha512-VY2Zfav71iof/zYOJ3MZjlFG5kE4n5DR8r8liGjaDVP72pEgr4SD5JVtBfwruK6FdpEUYkwFLk+Mitw5Tu8eYg==
   dependencies:
     ajv "~8.11.0"
     ajv-formats "~2.1.1"
@@ -165,10 +165,10 @@
     commander "~9.4.1"
     node-fetch "~2.6.7"
 
-"@foal/core@3.1.0", "@foal/core@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@foal/core/-/core-3.1.0.tgz#8fa2338949fd09e81816f18c92880540c08806c5"
-  integrity sha512-9EWOOsawqn/BJfBe8Z2r9FeMQbMkT/CxfK6Ikw01fNL5GEI8zS7RvlyrnRggh9HzBHCyzCWLYPzakVxyvpVYkQ==
+"@foal/core@3.2.0", "@foal/core@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@foal/core/-/core-3.2.0.tgz#50148b987a01e7e90a0c20256f3898933e3ca725"
+  integrity sha512-BEEcM6S8B4HErwiZI5RrepFmNe7s15Ovab5UDw66Zl+Dsggk77eptEdQpyxHAho0ImxU4Wvf5eS2RgfLfeqCrA==
   dependencies:
     ajv "~8.11.0"
     ajv-formats "~2.1.1"
@@ -177,12 +177,12 @@
     morgan "~1.10.0"
     reflect-metadata "~0.1.13"
 
-"@foal/typeorm@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@foal/typeorm/-/typeorm-3.1.0.tgz#3226252f1c429cb3905f8362c38e772c5c51ba08"
-  integrity sha512-awIpTm6joGCxhsTjMmW9SfQIGkEVyFiCCrs0TVRqcrKVGuPuSKJfRi+syJ0LCxZ+c3D6n9H19+vX85RRUex3gg==
+"@foal/typeorm@3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@foal/typeorm/-/typeorm-3.2.0.tgz#9e7a21e75d37547deba55c63703686d06029b8f3"
+  integrity sha512-yy2u/yo4is2vRqrYwCJAwx23l+ig5FAUTIB2ckg3bdx72+8b1PgUp17zDxiV6KZ/NCvD1tVxhbqBy6txkciAfQ==
   dependencies:
-    "@foal/core" "^3.1.0"
+    "@foal/core" "^3.2.0"
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
@@ -971,10 +971,10 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
 
-eslint-config-xo-typescript@0.56.0:
-  version "0.56.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo-typescript/-/eslint-config-xo-typescript-0.56.0.tgz#291c4298a26aa951b998f005a4c896cbcd75944a"
-  integrity sha512-JOuV9M6R0BphdWome5SiolbsZFpw5DX83HgUaIUoEZwkk0hDv+fmPoHNc3KwmoON5QEkuBxlIbW0o3PifzPCuw==
+eslint-config-xo-typescript@0.57.0:
+  version "0.57.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo-typescript/-/eslint-config-xo-typescript-0.57.0.tgz#a1b5fe010657cbdea237a9ebfbd1e4e231b1b899"
+  integrity sha512-u+qcTaADHn2/+hbDqZHRWiAps8JS6BcRsJKAADFxYHIPpYqQeQv9mXuhRe/1+ikfZAIz9hlG1V+Lkj8J7nf34A==
 
 eslint-config-xo@0.43.1:
   version "0.43.1"
