@@ -165,36 +165,36 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.47.0.tgz#5478fdf443ff8158f9de171c704ae45308696c7d"
   integrity sha512-P6omY1zv5MItm93kLM8s2vr1HICJH8v0dvddDhysbIuZ+vcjOHg5Zbkf1mTkcmi2JA9oBG2anOkRnW8WJTS8Og==
 
-"@foal/cli@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@foal/cli/-/cli-3.2.0.tgz#68c6a306e84438b04ed2b8fd6dd572ca6df0fc85"
-  integrity sha512-VY2Zfav71iof/zYOJ3MZjlFG5kE4n5DR8r8liGjaDVP72pEgr4SD5JVtBfwruK6FdpEUYkwFLk+Mitw5Tu8eYg==
+"@foal/cli@3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@foal/cli/-/cli-3.3.0.tgz#f8f788f33b015bd1de3b1fa91330bb6432577e11"
+  integrity sha512-dMvwMN99TV8EHTId8EBYd/eHm4vLwZnBOWTvDEvtwjz5HL3+ks9dLs+dR/lTZCRshQiFaCyKfols4q/YN9suSQ==
   dependencies:
-    ajv "~8.11.0"
+    ajv "~8.12.0"
     ajv-formats "~2.1.1"
     cli-spinner "~0.2.10"
     colors "1.4.0"
     commander "~9.4.1"
     node-fetch "~2.6.7"
 
-"@foal/core@3.2.0", "@foal/core@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@foal/core/-/core-3.2.0.tgz#50148b987a01e7e90a0c20256f3898933e3ca725"
-  integrity sha512-BEEcM6S8B4HErwiZI5RrepFmNe7s15Ovab5UDw66Zl+Dsggk77eptEdQpyxHAho0ImxU4Wvf5eS2RgfLfeqCrA==
+"@foal/core@3.3.0", "@foal/core@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@foal/core/-/core-3.3.0.tgz#54db1267e6f1365c4bec3530fa82b33ca4a3ea18"
+  integrity sha512-S5iWOd8m+24MSKjQPxCFPEY4YlCbuHxLpokpH9y8d5iUYEYteu+NPPq3HWjc5uJ+xtmUpJu9DT8D6RcPZv2oCA==
   dependencies:
-    ajv "~8.11.0"
+    ajv "~8.12.0"
     ajv-formats "~2.1.1"
     cookie-parser "~1.4.6"
     express "~4.18.2"
     morgan "~1.10.0"
     reflect-metadata "~0.1.13"
 
-"@foal/typeorm@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@foal/typeorm/-/typeorm-3.2.0.tgz#9e7a21e75d37547deba55c63703686d06029b8f3"
-  integrity sha512-yy2u/yo4is2vRqrYwCJAwx23l+ig5FAUTIB2ckg3bdx72+8b1PgUp17zDxiV6KZ/NCvD1tVxhbqBy6txkciAfQ==
+"@foal/typeorm@3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@foal/typeorm/-/typeorm-3.3.0.tgz#4e543efc8fc2a4cc5f26df98613dc7f89dfc4887"
+  integrity sha512-xPkTwxaS3HXnNVyrDLCmCh3MxDSMa9HdXB5O5UcmtqHxrDWwgOb9+n9DqAMvH718HbDnRSSfAjEmMuBz5cLb0w==
   dependencies:
-    "@foal/core" "^3.2.0"
+    "@foal/core" "^3.3.0"
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
@@ -429,20 +429,10 @@ ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.0.0:
+ajv@^8.0.0, ajv@~8.12.0:
   version "8.12.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.12.0.tgz#d1a0527323e22f53562c567c00991577dfbe19d1"
   integrity sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA==
-  dependencies:
-    fast-deep-equal "^3.1.1"
-    json-schema-traverse "^1.0.0"
-    require-from-string "^2.0.2"
-    uri-js "^4.2.2"
-
-ajv@~8.11.0:
-  version "8.11.2"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.11.2.tgz#aecb20b50607acf2569b6382167b65a96008bb78"
-  integrity sha512-E4bfmKAhGiSTvMfL1Myyycaub+cUEU2/IvpylXkUu7CHBkBj1f/ikdzbD7YQ6FKUbixDxeYvB/xY4fvyroDlQg==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
