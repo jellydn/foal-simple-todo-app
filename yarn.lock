@@ -178,7 +178,7 @@
     commander "~9.4.1"
     node-fetch "~2.6.7"
 
-"@foal/core@3.3.0", "@foal/core@^3.3.0":
+"@foal/core@3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@foal/core/-/core-3.3.0.tgz#54db1267e6f1365c4bec3530fa82b33ca4a3ea18"
   integrity sha512-S5iWOd8m+24MSKjQPxCFPEY4YlCbuHxLpokpH9y8d5iUYEYteu+NPPq3HWjc5uJ+xtmUpJu9DT8D6RcPZv2oCA==
@@ -190,12 +190,24 @@
     morgan "~1.10.0"
     reflect-metadata "~0.1.13"
 
-"@foal/typeorm@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@foal/typeorm/-/typeorm-3.3.0.tgz#4e543efc8fc2a4cc5f26df98613dc7f89dfc4887"
-  integrity sha512-xPkTwxaS3HXnNVyrDLCmCh3MxDSMa9HdXB5O5UcmtqHxrDWwgOb9+n9DqAMvH718HbDnRSSfAjEmMuBz5cLb0w==
+"@foal/core@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@foal/core/-/core-4.2.0.tgz#77a73bb6f081a52c54f78027b32738a2ea3906bd"
+  integrity sha512-xA7l0RpkjKZ1Jx1aXw1BM2dal+wT94oeSghV782/+lUWWe6Ei627rgjG3P7loVfNMwbkXcMDDdv4JE1P2aHeYA==
   dependencies:
-    "@foal/core" "^3.3.0"
+    ajv "~8.12.0"
+    ajv-formats "~2.1.1"
+    cookie-parser "~1.4.6"
+    express "~4.18.2"
+    morgan "~1.10.0"
+    reflect-metadata "~0.1.13"
+
+"@foal/typeorm@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@foal/typeorm/-/typeorm-4.2.0.tgz#80192c0f9308f8b9a3d582299e34c9655c040419"
+  integrity sha512-Yr4yBWM6HDoatdBcmHlcecm4EZRQEaZS8NZm8o5OT78MzkKy3oD5Vi8XAw8SifduqnIyGYCNRRgHm/3U/Eddnw==
+  dependencies:
+    "@foal/core" "^4.2.0"
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
