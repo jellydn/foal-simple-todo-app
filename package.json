@@ -23,7 +23,7 @@
     "test": "npm run build:test && concurrently -r \"tsc -p tsconfig.test.json -w\" \"mocha --file ./build/test.js -w \\\"./build/**/*.spec.js\\\"\""
   },
   "dependencies": {
-    "@foal/core": "3.3.0",
+    "@foal/core": "4.5.1",
     "@foal/typeorm": "3.3.0",
     "better-sqlite3": "8.7.0",
     "source-map-support": "0.5.21",
